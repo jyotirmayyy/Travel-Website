@@ -1,0 +1,159 @@
+.navbar {
+    background-color: #176B87;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky; /* navbar always remains at the top while scrolling also*/
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px; /* navbar-menu also has the same height*/
+    max-width: 1500px;
+}
+
+.navbar-logo {
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+/************************************************/
+.lni-pyramids {
+    margin-left: 0.5rem;
+    font-size: 3rem;
+}
+/************************************************/
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto); /* Create 4 columns of automatic width */
+    grid-gap: 7px;
+    list-style: none;
+    text-align: center;
+    width: 65vw;
+    justify-content: end;
+    margin-right: 2rem;
+    height: 100px; /* has the same height as navbar-container*/
+}
+/************* Use in Hamburger Menu ************/
+.nav-item {
+    height: 100px;
+}
+/************************************************/
+.nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+.nav-links:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+}
+/************************************************/
+.lni-list {
+    color: #fff;
+}
+/************************************************/
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+/************************************************/
+@media screen and (max-width: 960px) {
+    .nav-item {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 61vh;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: #176B87;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        border: 1px solid white;
+    }
+
+    .nav-links:hover {
+        background-color: #fff;
+        color: #176B87;
+        border-radius: 0;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+/*************************** Hambuger Menu and Cross **********************************/
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .lni-list, .lni-cross-circle {
+        color: #fff;
+        font-size: 2rem;
+    }
+/******************************* Sing-up Button **************************************/
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #fff;
+        padding: 14px 20px;
+        border: 1px solid #fff;
+        transition: all 0.3s ease-out;
+    }
+
+    .nav-links-mobile:hover {
+        background: #fff;
+        color: #176B87;
+        transition: 250ms;
+    }
+}

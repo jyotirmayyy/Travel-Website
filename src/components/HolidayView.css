@@ -1,0 +1,35 @@
+.holiday-view {
+    width: 100vw;
+    /* occupy the entire viewport width */
+    height: 70vh;
+    /* occupy the entire viewport height */
+    padding: 30px  0 0 30px;
+    display: flex;
+    flex-direction: column; /* Means the main-axis is vertical*/
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.holiday-view h2 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 3rem;
+}
+
+.holiday-view select {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.holiday-view ul {
+    font-size: 1.2rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.holiday-view li {
+    margin-bottom: 10px;
+}

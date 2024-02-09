@@ -1,0 +1,41 @@
+.btn {
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background-color: #EEF5FF;
+    color: #176B87;
+    font-weight: 700;
+    border: 1px solid #EEF5FF;
+}
+
+.btn--outline {
+    background-color: transparent;
+    color: #EEF5FF;
+    font-weight: 700;
+    padding: 8px 20px;
+    border: 1px solid #EEF5FF;
+}
+
+/*Sizes*/
+.btn--medium {
+    /* padding: 8px 20px; */
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.btn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/**************** Only two sizes, that's why using instead of btn--outline *****************/
+.btn--large:hover,
+.btn--medium:hover {
+    transition: all 0.25s ease-out;
+    background: #B4D4FF;
+    color: #176B87;
+}

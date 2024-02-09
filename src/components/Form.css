@@ -1,0 +1,87 @@
+.form-heading {
+    background-color: #B4D4FF;
+    padding: 50px 0 20px;
+    font-size: 3rem;
+}
+/************************************/
+
+.travel-form-container {
+    background-color: #B4D4FF;
+    min-height: 100vh;
+    display: flex;
+ /* flex-direction: row */
+    justify-content: center; 
+    /*justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.*/
+    align-items: center; /* Align items on the cross-axis*/
+}
+
+.travel-form {
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    max-width: 500px;
+    width: 100%;
+    padding: 30px 30px 50px 30px;
+    margin-bottom: 70px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /*three values are given, they are interpreted as <offset-x>, <offset-y> and <blur-radius>
+    rgba(R G B[ / A]) 
+    R, G, B Each as a <number> between 0 and 255, a <percentage> between 0% and 100%, or the keyword none, which represent the red, green, and blue channels.
+    A - Optional An <alpha-value> or the keyword none, where the number 1 corresponds to 100% (full opacity).*/
+}
+
+.travel-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.travel-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: .1px solid black;
+}
+
+.form-button-container {
+    text-align: center;
+}
+/**************************************/
+.travel-form button {
+    background-color: #86B6F6;
+    border-radius: 8px;
+    border: none;
+    width: 50%;
+    margin-top: 30px;
+    padding: 15px;
+    color: #176B87;
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.travel-form button:hover {
+    background-color: #B4D4FF;
+    transition: all .25s ease-out;
+}
+/***************************************/
+/********************************************************************/
+.submitted-data {
+    margin-top: 50px;
+    border: 4px dashed #176B87;
+    padding: 10px;
+}
+
+.submitted-data h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.submitted-data mark {
+    background-color: #B4D4FF;
+}
